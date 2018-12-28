@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="container">
+
+
+    <form action="https://cors-anywhere.herokuapp.com/https://mate-academy-form-lesson.herokuapp.com/create-application"
+      method="post" class="">
+
+      <fieldset>
+        <div class="row">
+          <h1>Personal Information</h1>
+          <legend>Personal Information</legend>
+          <div class="form-group col-lg-8 col-6">
+            <label for="surname">Surname:</label>
+            <input type="text" class="form-control" id="surname" name="surname" autocomplete="off" required>
+          </div>
+
+          <div class="form-group col-lg-4 col-6">
+            <label for="name">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" value="">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-12">
+            <label for="age">How old are You?:</label>
+            <input type="number" class="form-control" id="age" name="age">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-4 col-6">
+            <label for="full-date">Full date of birth:</label>
+            <input type="date" class="form-control" id="full-date" name="full-date">
+          </div>
+          <div class="custom-control custom-checkbox col-lg-6 offset-lg-3 col-sm-6 ">
+            <label for="agreement" class="custom-control-label">I accept the terms of the agreement</label>
+            <input type="checkbox" class="custom-control-input" id="agreement" name="agreement">
+          </div>
+        </div>
+
+      </fieldset>
+
+      <fieldset>
+        <div class="row">
+          <legend>Registration</legend>
+          <div class="form-group col-lg-8 col-6">
+            <label for="email">E-mail</label>
+            <input type="email" class="form-control" id="email" name="email">
+          </div>
+          <div class="form-group col-lg-4 col-6">
+            <label for="password">Password</label>
+            <input type="password" class="form-control" id="password" name="password" minlength="6" maxlength="16">
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="row">
+          <legend>An interesting fact about you!</legend>
+          <div class="col-lg-8 col-sm-12 col-6 radio">
+            <div>Do you love cats?</div>
+            <input class="radio" type="radio" value="yes" id="yes" name="love-cats-vote">
+            <label for="yes">Yes</label>
+            <input class="radio" type="radio" value="no" id="no" name="love-cats-vote">
+            <label for="no">No</label>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="form-group col-lg-4 col-sm-4 col-6">
+            <label for="fav-color">What is your favorite color?</label>
+            <div>
+              <input class="form-control" type="color" name="color" id="fav-color">
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-sm-4 col-6">
+            <div>
+              <label for="time-go-bed">What time do you go to bed?</label>
+            </div>
+            <div>
+              <input class="form-control" type="time" id="time-go-bed" name="time-go-bed">
+            </div>
+          </div>
+          <div class="form-group col-lg-4 col-sm-4 col-6">
+            <div>
+              <label for="brand">What your favorite brand of cars?</label>
+            </div>
+            <div>
+              <select class="custom-select" name="brand" id="brand" size="4">
+                <option value="bmw">BMW</option>
+                <option value="audi">Audi</option>
+                <option value="lada">Lada</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="form-group col-lg-12 col-sm-12">
+          <div>
+            <label for="rate">How do you rate our work?</label>
+          </div>
+          <input class="form-control" name="rate" id="rate" type="range" min="0" max="100" value="50" step="10">
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <div class="row">
+          <div class="form-group col-lg-6 offset-lg-2 offset-sm-3 col-6 offset-3">
+            <legend>Your comments:</legend>
+            <textarea name="comments" class="form-control" id="comments" cols="30" rows="3" placeholder="Comments"></textarea>
+          </div>
+        </div>
+      </fieldset>
+      <div class="row">
+        <div class="text-right col-lg-12">
+          <button class="btn btn-primary col-lg-2 col-sm-2 col-2" type="submit">Submit</button>
+          <button class="btn btn-danger col-lg-2 col-sm-2 col-2" type="reset">Reset</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
